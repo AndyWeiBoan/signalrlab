@@ -8,10 +8,21 @@ using Microsoft.AspNetCore.SignalR;
 using SignalrLab.Services;
 
 namespace SignalrLab.Hubs {
+
+    public class PlayerIdProvider : IUserIdProvider
+    {
+        public string GetUserId(HubConnectionContext connection)
+        {
+            return connection.GetHttpContext().Request.Query["access_token"];
+        }
+    }
+
     public interface IChatHub {
         // 這個方法是用來發出 Message 給 Client
         Task SendMessage(string message);
     }
+
+    [Authorize]
     public class ChatHub : Hub<IChatHub> {
         public Task SendMessage(string data) {           
 
@@ -22,10 +33,9 @@ namespace SignalrLab.Hubs {
             var h = Context.GetHttpContext().Request.Headers.ToList();
             HubCallerContext c = base.Context;
             Groups.AddToGroupAsync(c.ConnectionId, "A");
-            Groups.AddToGroupAsync(c.ConnectionId, "B");
-            Groups.AddToGroupAsync(c.ConnectionId, "C");
-            Groups.AddToGroupAsync(c.ConnectionId, "D");
-            Groups.AddToGroupAsync(c.ConnectionId, "E");
+            Clients.Client("21312").SendMessage("sdfdsfs");
+            Clients.Client(base.Context.ConnectionId).SendMessage("sdfdsfs");
+            Groups.RemoveFromGroupAsync("sdfds", "dsfdsfsd");
             return base.OnConnectedAsync();
         }
 

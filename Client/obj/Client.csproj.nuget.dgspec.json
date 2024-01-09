@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hhk80\\source\\repos\\SignalrLab\\Client\\Client.csproj": {}
+    "c:\\hs-workspace\\signalrlab\\Client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hhk80\\source\\repos\\SignalrLab\\Client\\Client.csproj": {
+    "c:\\hs-workspace\\signalrlab\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hhk80\\source\\repos\\SignalrLab\\Client\\Client.csproj",
+        "projectUniqueName": "c:\\hs-workspace\\signalrlab\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\Users\\hhk80\\source\\repos\\SignalrLab\\Client\\Client.csproj",
-        "packagesPath": "C:\\Users\\hhk80\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hhk80\\source\\repos\\SignalrLab\\Client\\obj\\",
+        "projectPath": "c:\\hs-workspace\\signalrlab\\Client\\Client.csproj",
+        "packagesPath": "C:\\Users\\andy.wei\\.nuget\\packages\\",
+        "outputPath": "c:\\hs-workspace\\signalrlab\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\hhk80\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andy.wei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +27,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://proget.higgstar.com/nuget/dev/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -54,7 +57,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -63,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
